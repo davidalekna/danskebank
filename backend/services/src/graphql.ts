@@ -66,7 +66,7 @@ apolloApp.applyMiddleware({
   },
 });
 
-/**************** server config ****************/
+/**************** service config ****************/
 
 const service = createServer(app);
 

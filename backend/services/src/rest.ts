@@ -13,6 +13,10 @@ app.use(eventContext());
 
 /**************** routes config ****************/
 
+// NOTE: in the exercise description it didin't make it very clear on how to
+// split a single input value into 2 values (val1, val2), so I just passed the
+// same value into both keys.
+
 app.get("/person/:input", (req, res) => {
   res.json({ val1: req.params.input, val2: req.params.input });
 });
@@ -25,7 +29,7 @@ app.get("/exposure/:val2", (req, res) => {
   res.json({ val5: req.params.val2 });
 });
 
-/**************** server config ****************/
+/**************** service config ****************/
 
 const service = createServer(app);
 

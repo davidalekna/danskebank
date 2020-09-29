@@ -11,7 +11,7 @@ export class RestServer extends cdk.Construct {
       code: lambda.Code.fromAsset("services"),
       handler: "src/rest.handler",
       runtime: lambda.Runtime.NODEJS_12_X,
-      memorySize: 512,
+      memorySize: 256,
     });
   }
 }
